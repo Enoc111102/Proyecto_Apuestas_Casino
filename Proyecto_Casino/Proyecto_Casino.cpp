@@ -32,6 +32,7 @@ int main()
 		cin >> cantApost;
 		if (saldoAct > cantApost)
 		{
+			//Apuesta
 			aleatorio = 1 + rand() % (3 - 1);
 			if (aleatorio > 1)
 			{//gano
@@ -49,10 +50,10 @@ int main()
 				cin >> seguirApost;
 				cout << endl << endl;
 			}
-			//Apuesta
+			
 		}
 		else
-		{
+		{//Al quedarse sin saldo automaticamente terminara el programa
 			cout << RED << "Saldo insuficiente" << endl ;
 			cout << "Gracias por participar en el casino :)" << endl << endl;
 			seguirApost = 1;
